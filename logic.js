@@ -1,10 +1,11 @@
 const toggle = document.getElementById("toggle");
 const modeText = document.getElementById("modeText");
 
-// Detect system theme
+
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-// Load saved theme OR system default
+
+
 let savedTheme = localStorage.getItem("theme");
 
 if (savedTheme) {
@@ -15,7 +16,8 @@ if (savedTheme) {
     toggle.checked = systemDark;
 }
 
-// Update text
+
+
 function updateText() {
     if (document.body.classList.contains("dark")) {
         modeText.innerText = "Dark Mode 🌙";
@@ -25,7 +27,8 @@ function updateText() {
 }
 updateText();
 
-// Toggle event
+
+
 toggle.addEventListener("change", () => {
     if (toggle.checked) {
         document.body.classList.replace("light", "dark");
