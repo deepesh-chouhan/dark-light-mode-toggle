@@ -9,19 +9,22 @@ body {
     transition: all 0.5s ease;
 }
 
-/* Light Theme */
+
+
 body.light {
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #222;
 }
 
-/* Dark Theme */
+
+
 body.dark {
     background: linear-gradient(135deg, #141e30, #243b55);
     color: #fff;
 }
 
-/* Glass Card */
+
+
 .container {
     text-align: center;
     padding: 40px;
@@ -31,7 +34,8 @@ body.dark {
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
 
-/* Toggle */
+
+
 .toggle-label {
     width: 90px;
     height: 45px;
@@ -43,7 +47,8 @@ body.dark {
     transition: 0.4s;
 }
 
-/* Ball */
+
+
 .ball {
     width: 40px;
     height: 40px;
@@ -55,22 +60,26 @@ body.dark {
     transition: 0.4s;
 }
 
-/* Move ball */
+
+
 #toggle:checked + .toggle-label .ball {
     transform: translateX(45px);
 }
 
-/* Active color */
+
+
 #toggle:checked + .toggle-label {
     background: #4caf50;
 }
 
-/* Hide checkbox */
+
+
 #toggle {
     display: none;
 }
 
-/* Icons */
+
+
 .sun, .moon {
     position: absolute;
     top: 10px;
@@ -81,7 +90,8 @@ body.dark {
 .sun { left: 10px; }
 .moon { right: 10px; }
 
-/* Icon animation */
+
+
 #toggle:checked + .toggle-label .sun {
     opacity: 0;
     transform: rotate(180deg);
@@ -92,7 +102,8 @@ body.dark {
     transform: rotate(360deg);
 }
 
-/* Glow effect */
+
+
 .toggle-label:hover {
     box-shadow: 0 0 15px rgba(255,255,255,0.6);
 }
